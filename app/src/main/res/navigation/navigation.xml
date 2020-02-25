@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment" android:name="org.d3if4068.pra_assesment.Fragment.MainFragment"
+              android:label="fragment_main" tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_mainFragment_to_persegiPanjangFragment"
+                app:destination="@id/persegiPanjangFragment"/>
+        <action android:id="@+id/action_mainFragment_to_segitigaFragment" app:destination="@id/segitigaFragment"/>
+    </fragment>
+    <fragment android:id="@+id/aboutFragment2" android:name="org.d3if4068.pra_assesment.Fragment.AboutFragment"
+              android:label="fragment_about" tools:layout="@layout/fragment_about"/>
+    <fragment android:id="@+id/persegiPanjangFragment"
+              android:name="org.d3if4068.pra_assesment.Fragment.PersegiPanjangFragment"
+              android:label="PersegiPanjangFragment"/>
+    <fragment android:id="@+id/segitigaFragment" android:name="org.d3if4068.pra_assesment.Fragment.SegitigaFragment"
+              android:label="SegitigaFragment"/>
+</navigation>
